@@ -14,3 +14,13 @@ module "automation_account" {
     identity_ids = var.automation_account.identity.identity_ids
   }
 }
+
+automation_account = {
+  name     = "DV-DV-CE--kdw-asr-automationaccount"
+  sku_name = "Basic"
+  location = "canadaeast"
+  identity = {
+    identity_ids = []
+    type         = "SystemAssigned"
+  }
+}
